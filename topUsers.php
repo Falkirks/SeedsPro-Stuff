@@ -208,7 +208,7 @@ echo('<tr>
   $x = 0;
   $y = 0;
 foreach (explode("#", $value["avatar"]) as $key2 => $value2) {
-echo('<rect x="' . $x . '" y="' . $y . '" width="10" height="10"
+echo('<rect x="' . $x . '" y="' . $y . '" width="11" height="11"
   style="fill:' . $value2 . ';" />');
 	if ($x === 70) {
 		$y += 10;
