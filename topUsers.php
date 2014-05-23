@@ -211,12 +211,10 @@ foreach (explode("#", $value["avatar"]) as $key2 => $value2) {
 echo('<rect x="' . $x . '" y="' . $y . '" width="10" height="10"
   style="fill:' . $value2 . ';" />');
 	if ($x === 70) {
-		$y = $y + 10;
+		$y += 10;
 		$x = 0;
 	}
-	else {
-		$x = $x + 10;
-	}
+	else $x += 10;
 }
 echo("</svg></td>");
 
